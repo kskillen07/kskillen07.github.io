@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>enirgy.info - the Northern Ireland Electricity Information Site</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+
+	<!-- script tags
+	============================================================= -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+	<!-- ====================================================
+	header section -->
+	<header class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 header-logo">
+					<br>
+					<a href="index.html"><img src="img/enirgy_logo.png" alt="" class="img-responsive logo" width="220px"></a>
+				</div>
+
+				<div class="col-md-7">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid nav-bar">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					    </div>
+
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      
+					      <ul class="nav navbar-nav navbar-right">
+					        <li><a class="menu active" href="#home">Home</a></li>
+					        <li><a class="menu" href="#about_news">Latest News</a></li>
+					        <li><a class="menu" href="#about_news">About</a></li>
+					        <li><a class="menu" href="#">Articles</a></li>
+					        <li><a class="menu" href="#info">Key Information</a></li>
+					        <li><a class="menu" href="#contact">Contact Us</a></li>
+					      </ul>
+					    </div><!-- /navbar-collapse -->
+					  </div><!-- / .container-fluid -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header> 
+	<!-- end of header area -->
+			
+
+			<section class="slider" id="home">
+				<div class="container-fluid">
+					<div class="row">
+
+					    <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+							<div class="header-backup"></div>
+
+					        <!-- Wrapper for slides -->
+					        <div class="carousel-inner" role="listbox">
+					            <div class="item active">
+					            	<img src="img/headerbg1_ni.png" alt="">
+
+					                <div class="carousel-caption">
+				               			<h1>Northern Ireland Electricity</h1>
+				               			<p>Some information goes here</p>
+				               			<button>find out more</button>
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					</div>
+				</div>
+			</section><!-- end of slider section -->
+
+
+		<!-- about and latest news section -->
+			<section class="about text" id="about_news">
+				<div class="container">
+					<div class="row">
+  						<div class="col-sm-4">
+  							<h2>About ENIRGY</h2>
+
+									<div class="image-profile">
+										<div class="image-cropper">
+											<img src="img/jamie.jpg" alt="Jamie Delargy, Founder of enirgy.info" class="profile-pic">
+										</div>
+									</div>
+
+									<p>Welcome to enirgy.info, the site that aims to inform you about the electricity market and more importantly how to cut your power bills.</p>
+
+									<p>enirgy.info is an initiative by local business journalist Jamie Delargy who, over the years, has made the subject of electricity and gas an area of special interest.</p>
+
+
+									<button>Read More</button>
+
+									<h3>Tweet Jamie</h3>
+										<!--Twitter Feed Embed-->
+									<div id="twitter">
+
+										<a class="twitter-timeline" data-width="450" data-height="200" data-link-color="#19CF86" data-chrome="nofooter transparent noheader transparent" href="https://twitter.com/Jamie_Delargy?ref_src=twsrc%5Etfw">Tweets by Jamie_Delargy</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+									</div>
+									<!--end twitter feed-->
+
+							</div>
+
+  						<div class="col-sm-8">
+  							<div class="latest-articles">
+  								<h2>Latest News</h2>
+  								
+  									<!--first news article-->
+  									<div class="latest-articles-first">
+  										<div class="about-img">
+  											<img class="img-responsive" src="img/img_news_electriccars.png" alt="">
+  										</div>
+
+  											<div class="latest-articles-detail">
+  												<h3>SURGE IN SALES OF ELECTRIC AND HYBRID CARS</h3>
+  												<p>We’ve been in the slow lane as far as the take up of electric and hybrid cars is concerned but are now beginning to pick up speed. The latest figures from the Society of Motor...</p>
+
+												<div class="datepublished">Published on 25/11/19</div>
+												
+												<button>read more</button>
+  											</div>
+  									</div>
+  									<!--end of first news article-->
+
+  									<!--second news article-->
+  									<div class="latest-articles-second">
+  										<div class="about-img">
+  											<img class="img-responsive" src="img/img_news_windfarm.png" alt="">
+  										</div>
+
+  										<div class="latest-articles-detail">
+  											<h3>BRIGHT FUTURE FORECAST FOR OFFSHORE WIND FARMS</h3>
+  											<p>Rosy pictures are often painted for the future of renewables but what makes this latest one stand out is the astonishing contribution it predicts the offshore wind industry is poised to make.</p>
+											
+											<div class="datepublished">Published on 20/10/19</div>
+											<button>read more</button>
+  										</div>
+									</div>
+									<!--end of second news article-->
+
+									<div id="viewallarticles">
+										<button>View All Articles</button>
+									</div>
+  							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section ends here -->
+
+		<!-- key information section -->
+			<section class="about text-center" id="info">
+				<div class="container">
+					<div class="row">
+						<h2>Key Information</h2>
+						<h4>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</h4>
+
+						<div class="col-md-4 col-sm-6">
+							<div class="key-information-snippet clearfix">
+								<div class="about-img">
+									<img class="img-responsive" src="img/img_compareenergy_lightbulbs.jpg" alt="">
+								</div>
+
+								<div class="keyinfo">
+									<h3><a class="home_infobtn" href="compareprices.html">Compare NI Electricity Prices</a></h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6">
+							<div class="key-information-snippet">
+								<div class="about-img">
+									<img class="img-responsive" src="img/img_renewable_windmill.jpg" alt="">
+								</div>
+
+								<div class="keyinfo">
+									<h3><a class="home_infobtn" href="renewables.html">Renewables</a></h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-4 col-sm-6">
+							<div class="key-information-snippet" a href>
+								<div class="about-img">
+									<img class="img-responsive" src="img/img_statistics.jpg" alt="">
+								</div>
+
+								<div class="keyinfo">
+									<h3><a class="home_infobtn" href="fuelprices.html">Central Heating Fuel Prices</a></h3>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section><!-- end of about section -->
+
+			<!-- map section -->
+			<section class="api-map" id="contact">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 map" id="map"></div>
+					</div>
+				</div>
+			</section><!-- end of map section -->
+
+			<!-- contact section starts here -->
+			<section class="contact">
+				<div class="container">
+					<div class="row">
+							<div class="contact-caption clearfix">
+								<div class="contact-heading text-center">
+									<h2>Contact Us</h2>
+								</div>
+
+								<div class="col-md-5 contact-info text-left">
+									<h3>How to get in touch</h3>
+									<div class="info-detail">
+										<ul>
+											<li>Comment and reaction is welcomed by enirgy.info. If you identify any errors, your messages are especially welcome. But if you simply disagree with the judgments expressed, please get in touch too by filling out the contact form as shown. We will attempt to get back to you within five working days with a response.</li>
+										</ul>
+									</div>
+								</div>
+
+
+								<div class="col-md-6 col-md-offset-1 contact-form">
+									<h3>Send us a message</h3>
+
+									<form class="form">
+										<input class="name" type="text" placeholder="Name">
+										<input class="phone" type="text" placeholder="Phone No:">
+										<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+										<input class="submit-btn" type="submit" value="SUBMIT">
+									</form>
+								</div>
+
+							</div>
+					</div>
+				</div>
+			</section><!-- end of contact section -->
+
+
+			<!-- footer starts here -->
+			<footer class="footer clearfix">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 footer-para">
+							<p>2019-2020 &copy; enirgy.info — the Northern Ireland electricity information website. All rights reserved.<br/>
+							Click <a href="#">here</a> to read our terms and conditions.</p>
+						</div>
+
+						<div class="col-xs-6 text-right">
+							<a href=""><i class="fa fa-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+	<script src="js/custom.js"></script>
+</body>
+</html>
