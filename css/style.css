@@ -278,7 +278,7 @@ li a.active{
 	border-top:2px solid #71A8EA;
 }
 
-/*latest news articles*/
+/*latest news articles HP*/
 
 .datepublished{
 	width: 130px;
@@ -290,11 +290,6 @@ li a.active{
 	color: #fff;
 	font-size: 18px;
 	border:0;
-	transition:all .5s ease 0s;
-	-webkit-transition:all .5s ease 0s;
-	-moz-transition:all .5s ease 0s;
-	-o-transition:all .5s ease 0s;
-	-ms-transition:all .5s ease 0s;
 }
 
 .latest-articles{
@@ -339,16 +334,17 @@ li a.active{
 }
 
 #viewallarticles{
-	width:92%;
+	width:98%;
 }
 
-#viewallarticles button{
+#viewallarticles a{
 	float:right;
-	width: 180px;
-	height: 30px;
+	width: 160px;
+	height: 35px;
 	background: #37588C;
 	color: #fff;
 	font-size: 20px;
+	padding:5px 10px 10px 25px;
 	text-transform: uppercase;
 	border:0;
 	transition:all .5s ease 0s;
@@ -358,10 +354,9 @@ li a.active{
 	-ms-transition:all .5s ease 0s;
 }
 
-#viewallarticles button:hover{
+#viewallarticles a:hover{
 	background: #5488DB;
 }
-
 
 /*contact section*/
 
@@ -370,28 +365,29 @@ li a.active{
 }
 .contact-heading h2{
 	color: #fff;
-	font-size: 90px;
+	font-size: 50px;
 }
 .contact-info{
-	padding-left: 40px;
+	padding-left: 80px;
 }
 .contact-info h3{
 	padding-left: 0;
-	font-size: 24px;
+	font-size: 22px;
 	color: #fff;
+	font-weight: bold;
 	text-transform: uppercase;
 	border-bottom: 1px solid #ebebeb;
-	padding-bottom: 12px;
+	padding-bottom: 10px;
 	margin-bottom: 0;
 }
 .contact-form h3{
 	padding-left: 0;
-	font-size: 24px;
+	font-size: 22px;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: bold;
 	border-bottom: 1px solid #ebebeb;
-	padding-bottom: 12px;
+	padding-bottom: 10px;
 	margin-bottom: 0;
 }
 .contact-info ul{
@@ -399,7 +395,7 @@ li a.active{
 	padding: 0;
 }
 .contact-info ul li{
-	font-size: 13px;
+	font-size: 12px;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -416,7 +412,7 @@ li a.active{
 	width: 100%;
 	height: 30px;
 	background: #fff;
-	font-size: 13px;
+	font-size: 12px;
 	color: #084a5c;
 	font-family: 'Open Sans', sans-serif;
 	padding: 12px;
@@ -425,9 +421,10 @@ li a.active{
 }
 .contact-form textarea{
 	font-family: 'Open Sans', sans-serif;
-	padding:12px;
+	padding:10px;
+	font-size:12px;
 	width: 100%;
-	height: 100px;
+	height: 70px;
 	border:0;
 	margin-bottom: 12px;
 }
@@ -439,10 +436,10 @@ li a.active{
 	text-align: right;
 }
 .contact-form input.submit-btn{
-	width: 130px;
-	height: 35px;
+	width: 110px;
+	height: 30px;
 	float: right;
-	font-size: 22px;
+	font-size: 18px;
 	color: #fff;
 	background-color: #6DBF93;
 	padding: 0;
@@ -455,14 +452,15 @@ li a.active{
 }
 
 .contact-form{
-	padding-right: 40px;
+	padding-right: 80px;
 }
 
 /*Contact Form BG*/
 #map{
-	height: 600px;
+	height: 360px;
 	background-color: #4A535D;
-}
+	}
+
 .map{
 	position: relative;
 	overflow: hidden;
@@ -470,14 +468,15 @@ li a.active{
 .contact{
 	position: absolute;
 	width: 100%;
-	height: 600px;
-	margin-top: 0px;
+	height: 360px;
 	left: 0;
-	margin-top: -600px;
-	background: rgba(0, 0, 0, 0.51);
+	margin-top: -360px;
+	background-color: #fff;
 }
 .contact-caption{
 	margin-top: 30px;
+	border-top:5px solid #434745;
+	width:99%;
 }
 
 /*renewables page section*/
@@ -584,13 +583,186 @@ li a.active{
 	width:90%;
 }
 
+/*all news articles page */
+
+#allnewsarticles{
+	background: #fff;
+	position: relative;
+	border-bottom: 5px solid #ebebeb;
+	padding:0px 20px 50px 20px;
+	background-color: #fff;
+}
+
+#allnewsarticles h2{
+	font-size: 34px;
+	color: #5084C3;
+}
+
+#allnewsarticles p{
+	font-size: 14px;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	padding: 5px 5px 5px 0px;
+}
+
+.allnewsarticles-sidebar{
+	margin:60px 20px 0px 90px;
+	width:80%;
+}
+
+.allnewsarticles-sidebar h3{
+	font-size: 34px;
+	color: #5084C3;
+	padding-left:2px;
+}
+
+.displayall{
+	width:90%;
+}
+
+.newsarticle{
+	background: #fff;
+	margin-top:25px;
+	border: 1px solid #6a90c4;
+	border-top:7px solid #6a90c4;
+	padding:20px 20px 20px 20px;
+	height: 260px;
+}
+.newsarticle h3{
+	font-size: 30px;
+	color: #fff;
+	margin-top: 0;
+	color:#000;
+}
+.newsarticle p{
+	font-size: 12px;
+	color: #363636;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0px;
+}
+
+.newsarticle a{
+	float:right;
+	width: 135px;
+	height: 35px;
+	background: #37588C;
+	color: #fff;
+	font-size: 20px;
+	padding:4px 0px 5px 10px;
+	text-transform: uppercase;
+	border:0;
+	transition:all .5s ease 0s;
+	-webkit-transition:all .5s ease 0s;
+	-moz-transition:all .5s ease 0s;
+	-o-transition:all .5s ease 0s;
+	-ms-transition:all .5s ease 0s;
+}
+
+.newsarticle a:hover{
+	background: #5488DB;
+}
+
+.allnewsdatepublished{
+	width: 140px;
+	height: 30px;
+	padding:4px 0px 0px 6px;
+	margin:0px 50px 10px 0px;
+	float: left;
+	background: #6aa387;
+	color: #fff;
+	font-size: 18px;
+	border:0;
+}
+
+/*Search News*/
+.search {
+  width: 80%;
+  position: relative;
+  display: flex;
+  font-size:20px;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #6aa387;
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #6aa387;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #6aa387;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*article detail page*/
+
+.article-sidebar{
+	margin:70px 30px 0px 80px;
+	width:80%;
+}
+
+.article-sidebar h3{
+	font-size: 34px;
+	color: #5084C3;
+	padding-left:2px;
+}
+
+.article-full{
+	background: #fff;
+	position: relative;
+	padding:0px 20px 70px 0px;
+	background-color: #fff;
+}
+
+.article-full h3{
+	font-size: 20px;
+	color: #6aa387;
+}
+
+.article-full p{
+	font-size: 14px;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	padding: 5px 5px 0px 0px;
+}
+
+.article-full a{
+	color:#5084C3;
+	font-size:24px;
+	text-decoration: underline;
+	transition:all .5s ease 0s;
+	-webkit-transition:all .5s ease 0s;
+	-moz-transition:all .5s ease 0s;
+	-o-transition:all .5s ease 0s;
+	-ms-transition:all .5s ease 0s;
+}
+
+.article-full a:hover{
+	color:#61a2f2;
+}
+
 /*terms and conditions page section*/
 
 #termsconditions{
 	background: #fff;
 	position: relative;
 	border-bottom: 5px solid #ebebeb;
-	padding:0px 20px 0px 50px;
+	padding:0px 20px 0px 100px;
 	background-color: #fff;
 }
 
@@ -614,8 +786,7 @@ li.terms{
 /*footer*/
 .footer{
 	background-color: #424341;
-	border-top:1px solid #81837F;
-	height:95px;
+	height: 100px;
 }
 
 .footer-para{
@@ -623,9 +794,10 @@ li.terms{
 	padding: 0;
 }
 .footer p{
-	font-size: 18px;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
 	color: #fff;
-	padding:15px;
+	padding:15px 10px 15px 0px;
 
 }
 .footer a{
@@ -642,6 +814,7 @@ li.terms{
 	color: #fff;
 	padding: 22px 10px;
 }
+
 .footer a i.fa:hover{
 	color: #42b3e5;
 }
@@ -729,7 +902,7 @@ responsive area
 	  font-size: 24px;
 	}
 	h2 {
-  		font-size: 50px !important;
+  		font-size: 35px !important;
   	}
   	h4 {
   		font-size: 22px !important;
@@ -786,6 +959,10 @@ responsive area
 	.contact-caption {
 	 margin-top: 110px;
 	}
+
+	#termsconditions{
+	padding-left: 50px;
+}
 }
 
 /* xs */
@@ -811,21 +988,21 @@ responsive area
 	  font-size: 18px;
 	}
 	#map{
-		height: 1120px;
+		height: 400px;
 	}
 	.contact{
-		height: 1120px;
-		margin-top: -1120px;
+		height: 400px;
+		margin-top: -400px;
 	}
 	.contact-form{
 		margin-left:25px;
 	}
 
 	h2 {
-	  font-size: 45px !important;
+	  font-size: 30px !important;
 	}
 	h4{
-  		font-size: 21px !important;
+  		font-size: 18px !important;
   	}
 	.contact-info ul {
 	  margin-left: 4px;
@@ -836,6 +1013,9 @@ responsive area
 	.contact-caption {
 	  margin-top: 140px;
 	}
+
+	#termsconditions{
+	padding-left: 40px;
 }
 
 /* XS Portrait */
@@ -898,11 +1078,11 @@ responsive area
 		margin-top: 38%;
 	}
 	#map{
-		height: 950px;
+		height: 400px;
 	}
 	.contact{
-		height: 950px;
-		margin-top: -950px;
+		height: 400px;
+		margin-top: -400px;
 	}
 	.contact-heading h2 {
 	  font-size: 50px;
@@ -941,4 +1121,8 @@ responsive area
 	.footer p {
   		font-size: 10px;
   	}
+
+  	.footer{
+	height: 95px;
+}
 }
