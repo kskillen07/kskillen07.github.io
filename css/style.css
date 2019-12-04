@@ -112,7 +112,7 @@ li a.active{
 .carousel-caption button{
 	width: 220px;
 	height: 40px;
-	background: #4DA374;
+	background: #5AA29C;
 	color: #fff;
 	font-size: 30px;
 	text-transform: uppercase;
@@ -170,7 +170,7 @@ li a.active{
 
 .image-profile{
 	width:100%;
-	margin-left:30px;
+	margin:40px 10px 0px 15px;
 }
 .image-cropper {
     width: 195px;
@@ -178,7 +178,7 @@ li a.active{
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    border:3px solid #4FB18D;
+    border:2px solid #6a90c4;
 	float:right;
 }
 .profile-pic {
@@ -188,11 +188,12 @@ li a.active{
   width: auto;
 }
 
-/*about/news area*/
+/*about section homepgae*/
 .about h2{
 	font-size: 90px;
 	color: #4772B2;
-	margin-top: 65px;
+	margin-top: 45px;
+	padding-left:30px;
 }
 
 .about h4{
@@ -203,14 +204,22 @@ li a.active{
 
 .about p{
 	font-family: 'Open Sans', sans-serif;
-	font-size:13px;
+	font-size:12px;
+	padding:0px 20px 0px 30px;
 }
 
 .about-img img{
 	width: 100%;
 }
 
-#about_news button{
+#about {
+	margin-top: 30px;
+	background-color: #ebebeb;
+	padding:20px 0px 50px 0px;
+}
+
+#about button{
+	margin:10px 0px 0px 30px;
 	width: 120px;
 	height: 30px;
 	background: #4DA374;
@@ -224,9 +233,10 @@ li a.active{
 	-o-transition:all .5s ease 0s;
 	-ms-transition:all .5s ease 0s;
 }
-#about_news button:hover{
+#about button:hover{
 	background: #58DB93;
 }
+
 
 /*twitter timeline embed*/
 
@@ -234,8 +244,127 @@ li a.active{
 	margin:20px 0px 20px 0px;
 }
 
+/*latest news/video section homepgae*/
+#news h2{
+	font-size: 90px;
+	color: #4772B2;
+	margin-top: 65px;
+	padding:0px;
+}
 
-/*key information section*/
+#news h4{
+	font-size: 24px;
+	color: #737373;
+	margin-bottom: 45px;
+}
+
+#news p{
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+}
+
+#news-img img{
+	width: 100%;
+}
+
+#news button{
+	width: 120px;
+	height: 30px;
+	background: #4DA374;
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+	border:0;
+	transition:all .5s ease 0s;
+	-webkit-transition:all .5s ease 0s;
+	-moz-transition:all .5s ease 0s;
+	-o-transition:all .5s ease 0s;
+	-ms-transition:all .5s ease 0s;
+}
+#news button:hover{
+	background: #58DB93;
+}
+
+.datepublished{
+	width: 130px;
+	height: 30px;
+	padding:4px 0px 0px 6px;
+	margin:0px 50px 0px 0px;
+	float: left;
+	background: #71A8EA;
+	color: #fff;
+	font-size: 18px;
+}
+
+.latest-articles{
+	margin-left:30px;
+	height: relative;
+}
+
+#latest-articles-first{
+	margin:15px 0px 15px 0px;
+	width:48%;
+	float:left;
+}
+
+#latest-articles-second{
+	margin:15px 0px 15px 15px;
+	width:48%;
+	float:left;
+}
+
+.latest-articles-detail{
+	background: #3F3F3F;
+	border-top: 2px solid #fff;
+	padding:15px;
+	display:block;
+	height:330px;
+	transition: all .7s ease 0s;
+	-webkit-transition: all .7s ease 0s;
+	-moz-transition: all .7s ease 0s;
+	-o-transition: all .7s ease 0s;
+	-ms-transition: all .7s ease 0s;
+}
+.latest-articles-detail h3{
+	font-size: 28px;
+	color: #fff;
+	margin-top: 0;
+}
+.latest-articles-detail p{
+	font-size: 12px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0px;
+	padding-bottom: 10px;
+	margin-bottom:20px;
+}
+
+#viewallarticles{
+	width:150px;
+	height: 30px;
+	float:right;
+	margin:-40px 0px 0px 0px;
+}
+
+#viewallarticles a{
+	color: #fff;
+	background: #37588C;
+	font-size: 20px;
+	padding:5px 10px 5px 15px;
+	text-transform: uppercase;
+	border:0;
+	transition:all .5s ease 0s;
+	-webkit-transition:all .5s ease 0s;
+	-moz-transition:all .5s ease 0s;
+	-o-transition:all .5s ease 0s;
+	-ms-transition:all .5s ease 0s;
+}
+
+#viewallarticles a:hover{
+	background: #5488DB;
+}
+
+/*key information section homepage*/
 
 .keyinfo{
 	background: #3F3F3F;
@@ -274,91 +403,10 @@ li a.active{
 }
 
 #info {
-	margin-top:30px;
-	border-top:2px solid #71A8EA;
+	margin-top:0px;
 }
 
-/*latest news articles HP*/
-
-.datepublished{
-	width: 130px;
-	height: 30px;
-	padding:4px 0px 0px 6px;
-	margin:0px 50px 10px 0px;
-	float: left;
-	background: #71A8EA;
-	color: #fff;
-	font-size: 18px;
-	border:0;
-}
-
-.latest-articles{
-	margin-left:50px;
-	height: relative;
-}
-
-.latest-articles-first{
-	margin:15px 0px 15px 0px;
-	width:48%;
-	float:left;
-}
-
-.latest-articles-second{
-	margin:15px 0px 15px 15px;
-	width:48%;
-	float:left;
-}
-
-.latest-articles-detail{
-	background: #3F3F3F;
-	border-top: 2px solid #fff;
-	padding:15px;
-	transition: all .7s ease 0s;
-	-webkit-transition: all .7s ease 0s;
-	-moz-transition: all .7s ease 0s;
-	-o-transition: all .7s ease 0s;
-	-ms-transition: all .7s ease 0s;
-}
-.latest-articles-detail h3{
-	font-size: 30px;
-	color: #fff;
-	margin-top: 0;
-}
-.latest-articles-detail p{
-	font-size: 12px;
-	color: #fff;
-	font-family: 'Open Sans', sans-serif;
-	padding: 0px;
-	padding-bottom: 10px;
-	margin-bottom:20px;
-}
-
-#viewallarticles{
-	width:98%;
-}
-
-#viewallarticles a{
-	float:right;
-	width: 160px;
-	height: 35px;
-	background: #37588C;
-	color: #fff;
-	font-size: 20px;
-	padding:5px 10px 10px 25px;
-	text-transform: uppercase;
-	border:0;
-	transition:all .5s ease 0s;
-	-webkit-transition:all .5s ease 0s;
-	-moz-transition:all .5s ease 0s;
-	-o-transition:all .5s ease 0s;
-	-ms-transition:all .5s ease 0s;
-}
-
-#viewallarticles a:hover{
-	background: #5488DB;
-}
-
-/*contact section*/
+/*contact section homepage*/
 
 .contact-caption{
 	background: #4772B2;
@@ -380,16 +428,7 @@ li a.active{
 	padding-bottom: 10px;
 	margin-bottom: 0;
 }
-.contact-form h3{
-	padding-left: 0;
-	font-size: 22px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: bold;
-	border-bottom: 1px solid #ebebeb;
-	padding-bottom: 10px;
-	margin-bottom: 0;
-}
+
 .contact-info ul{
 	margin: 0;
 	padding: 0;
@@ -408,6 +447,18 @@ li a.active{
 .contact-info ul li span{
 	font-weight: bold;
 }
+
+.contact-form h3{
+	padding-left: 0;
+	font-size: 22px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-bottom: 1px solid #ebebeb;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+}
+
 .contact-form input{
 	width: 100%;
 	height: 30px;
@@ -456,12 +507,12 @@ li a.active{
 }
 
 /*Contact Form BG*/
-#map{
+#contactbg{
 	height: 360px;
-	background-color: #4A535D;
+	width:100%;
 	}
 
-.map{
+.contactbg{
 	position: relative;
 	overflow: hidden;
 }
@@ -471,12 +522,11 @@ li a.active{
 	height: 360px;
 	left: 0;
 	margin-top: -360px;
-	background-color: #fff;
+	background-color: #4772B2;
 }
 .contact-caption{
-	margin-top: 30px;
-	border-top:5px solid #434745;
-	width:99%;
+	margin-top: 40px;
+	width:100%;
 }
 
 /*renewables page section*/
@@ -786,7 +836,8 @@ li.terms{
 /*footer*/
 .footer{
 	background-color: #424341;
-	height: 100px;
+	border-top:8px solid #ffffff;
+	height: 95px;
 }
 
 .footer-para{
@@ -794,10 +845,10 @@ li.terms{
 	padding: 0;
 }
 .footer p{
-	font-size: 14px;
+	font-size: 13px;
 	font-family: 'Open Sans', sans-serif;
 	color: #fff;
-	padding:15px 10px 15px 0px;
+	padding:20px 10px 15px 0px;
 
 }
 .footer a{
