@@ -656,6 +656,7 @@ li a.active{
 #allnewsarticles h2{
 	font-size: 34px;
 	color: #5084C3;
+	margin-left:-30px;
 }
 
 #allnewsarticles p{
@@ -779,29 +780,33 @@ li a.active{
 .article-sidebar h3{
 	font-size: 34px;
 	color: #5084C3;
-	padding-left:2px;
 }
 
-.article-full{
-	background: #fff;
+#article-full{
 	position: relative;
-	padding:0px 20px 70px 0px;
+	padding:20px 20px 70px 0px;
 	background-color: #fff;
 }
 
-.article-full h3{
+#article-full h2{
+	font-size: 20px;
+	color: #5084C3;
+	margin-left:-30px;
+}
+
+#article-full h3{
 	font-size: 20px;
 	color: #6aa387;
 }
 
-.article-full p{
+#article-full p{
 	font-size: 14px;
 	color: #000000;
 	font-family: 'Open Sans', sans-serif;
 	padding: 5px 5px 0px 0px;
 }
 
-.article-full a{
+#article-full a{
 	color:#5084C3;
 	font-size:24px;
 	text-decoration: underline;
@@ -812,7 +817,7 @@ li a.active{
 	-ms-transition:all .5s ease 0s;
 }
 
-.article-full a:hover{
+#article-full a:hover{
 	color:#61a2f2;
 }
 
@@ -827,12 +832,18 @@ li a.active{
 }
 
 #termsconditions h3{
-	font-size: 32px;
+	font-size: 28px;
+	color: rgb(209, 81, 81);
+}
+
+#termsconditions h2{
+	font-size: 36px;
 	color: #5084C3;
+	margin-left:-30px;
 }
 
 #termsconditions p{
-	font-size: 14px;
+	font-size: 13px;
 	color: #000000;
 	font-family: 'Open Sans', sans-serif;
 	padding-bottom:10px;
@@ -841,6 +852,32 @@ li a.active{
 li.terms{
 	font-family: 'Open Sans', sans-serif;
 	list-style: disc;
+}
+
+/*privacy policy page*/
+
+#privacypolicy{
+	position: relative;
+	border-bottom: 5px solid #ebebeb;
+	padding:0px 20px 0px 100px;
+	background-color: #fff;
+}
+
+#privacypolicy h2{
+	font-size: 36px;
+	color: #5084C3;
+	margin-left:-30px;
+}
+
+#privacypolicy h3{
+	font-size: 28px;
+	color: rgb(209, 81, 81);
+}
+
+#privacypolicy p{
+	font-size: 13px;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /*footer*/
