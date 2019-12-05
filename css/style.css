@@ -226,10 +226,9 @@ li a.active{
 
 /*YouTube video homepagee*/
 #static_video{
-	border:1px solid #6a90c4;
 	margin:0px 0px 0px 30px;
 	width: 95%;
-	height:300px;
+	height:relative;
 }
 
 /*latest news/video section homepgae*/

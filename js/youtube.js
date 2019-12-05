@@ -1,9 +1,10 @@
 var CHANNEL_ID = "UC9quYR2ClHhZyMf_LPOuvOA"; // DP
-// var CHANNEL_ID = "UCupvZG-5ko_eiXAupbDfxWw";
+//var CHANNEL_ID = "UCupvZG-5ko_eiXAupbDfxWw";
 var API_KEY = "AIzaSyBS3-gqRn38RL_05Shn8aZOgPCp2e58a3o";
 
 $.ajax({
-    url: "https://www.googleapis.com/youtube/v3/search?key="+API_KEY+"&channelID="+CHANNEL_ID+"&part=snippet,id&order=date&maxResults=1",
+    //url: "https://www.googleapis.com/youtube/v3/search?key="+API_KEY+"&channelId="+CHANNEL_ID+"&part=snippet,id&order=date&maxResults=1",
+    url: "https://www.googleapis.com/youtube/v3/search?part=snippet&channelId="+CHANNEL_ID+"&maxResults=1&order=date&type=video&key="+API_KEY,
     context: document.body
 }).done(function(response) {
     console.log(response);
