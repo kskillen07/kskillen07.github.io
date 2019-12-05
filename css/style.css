@@ -14,7 +14,6 @@ h1, h2{
 	font-weight: bold;
 }
 
-
 /*header area*/
 .top-header{
 	background: #fff !important;
@@ -84,8 +83,6 @@ li a.active{
   margin-top: 4px;
 }
 
-
-
 /*slider area*/
 .slider-row{
 	margin: 0;
@@ -146,25 +143,6 @@ li a.active{
     top: 50%;
     margin-top: -100px;
 }
-.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
-  font-size: 18px;
-  padding: 5px;
-  background: #fff;
-  border-radius: 50%;
-  color: transparent;
-  margin-left: 0;
-  margin-top: 50px;
-}
-.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
-  font-size: 18px;
-  padding: 5px;
-  background: #fff;
-  border-radius: 50%;
-  color: transparent;
-  margin-right: 0;
-  margin-top: 50px;
-}
-
 
 /*Jamie picture*/
 
@@ -204,7 +182,7 @@ li a.active{
 }
 
 #about p{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-size:12px;
 	padding:0px 30px 0px 30px;
 	width:520px;
@@ -269,7 +247,7 @@ li a.active{
 }
 
 #news p{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-size:12px;
 }
 
@@ -294,7 +272,6 @@ li a.active{
 #news button:hover{
 	background: #58DB93;
 }
-
 .datepublished{
 	width: 130px;
 	height: 30px;
@@ -305,24 +282,20 @@ li a.active{
 	color: #fff;
 	font-size: 18px;
 }
-
 .latest-articles{
 	margin-left:30px;
 	height: relative;
 }
-
 #latest-articles-first{
 	margin:15px 0px 15px 0px;
 	width:48%;
 	float:left;
 }
-
 #latest-articles-second{
 	margin:15px 0px 15px 15px;
 	width:48%;
 	float:left;
 }
-
 .latest-articles-detail{
 	background: #3F3F3F;
 	border-top: 2px solid #fff;
@@ -343,19 +316,17 @@ li a.active{
 .latest-articles-detail p{
 	font-size: 12px;
 	color: #fff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	padding: 0px;
 	padding-bottom: 10px;
 	margin-bottom:20px;
 }
-
 #viewallarticles{
 	width:150px;
 	height: 30px;
 	float:right;
 	margin:-40px 0px 0px 0px;
 }
-
 #viewallarticles a{
 	color: #fff;
 	background: #37588C;
@@ -369,13 +340,11 @@ li a.active{
 	-o-transition:all .5s ease 0s;
 	-ms-transition:all .5s ease 0s;
 }
-
 #viewallarticles a:hover{
 	background: #5488DB;
 }
 
 /*key information section homepage*/
-
 .keyinfo{
 	background: #3F3F3F;
 	position: relative;
@@ -395,23 +364,20 @@ li a.active{
 .keyinfo p{
 	font-size: 13px;
 	color: #fff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	padding: 0 25px;
 	padding-bottom: 30px;
 	margin-bottom:50px;
 }
-
 .keyinfo h3 a{
 	color:#fff;
 }
-
 .key-information-snippet:hover .keyinfo{
 	background: #5AA29C;
 }
 .key-information-snippet:hover {
 	color: #5AA29C;
 }
-
 #info {
 	margin-top:0px;
 }
@@ -423,14 +389,14 @@ li a.active{
 }
 .contact-heading h2{
 	color: #fff;
-	font-size: 50px;
+	font-size: 48px;
 }
 .contact-info{
-	padding-left: 80px;
+	padding-left: 20px;
 }
 .contact-info h3{
 	padding-left: 0;
-	font-size: 22px;
+	font-size: 24px;
 	color: #fff;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -443,9 +409,9 @@ li a.active{
 	padding: 0;
 }
 .contact-info ul li{
-	font-size: 12px;
+	font-size: 13px;
 	color: #fff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 }
 .contact-info i.fa{
 	font-size: 16px;
@@ -456,10 +422,9 @@ li a.active{
 .contact-info ul li span{
 	font-weight: bold;
 }
-
 .contact-form h3{
 	padding-left: 0;
-	font-size: 22px;
+	font-size: 24px;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -467,22 +432,21 @@ li a.active{
 	padding-bottom: 10px;
 	margin-bottom: 0;
 }
-
 .contact-form input{
 	width: 100%;
 	height: 30px;
 	background: #fff;
-	font-size: 12px;
+	font-size: 13px;
 	color: #084a5c;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	padding: 12px;
 	border:0;
 	margin-bottom: 12px;
 }
 .contact-form textarea{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	padding:10px;
-	font-size:12px;
+	font-size:13px;
 	width: 100%;
 	height: 70px;
 	border:0;
@@ -506,13 +470,11 @@ li a.active{
 	font-family: 'BenchNine', sans-serif;
 	font-weight: bold;
 }
-
 .contact-form input.submit-btn:hover{
 	background-color: #7CDCA8;
 }
-
 .contact-form{
-	padding-right: 80px;
+	padding-right: 50px;
 }
 
 /*Contact Form BG*/
@@ -556,7 +518,7 @@ li a.active{
 #renewables p{
 	font-size: 14px;
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	padding: 5px;
 }
 
@@ -590,7 +552,7 @@ li a.active{
 #fuelprices p{
 	font-size: 14px;
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	padding: 5px;
 }
 
@@ -623,7 +585,7 @@ li a.active{
 #compareprices p{
 	font-size: 14px;
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	padding: 5px;
 }
 
@@ -661,7 +623,7 @@ li a.active{
 #allnewsarticles p{
 	font-size: 14px;
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	padding: 5px 5px 5px 0px;
 }
 
@@ -697,7 +659,7 @@ li a.active{
 .newsarticle p{
 	font-size: 12px;
 	color: #363636;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	padding: 0px;
 }
 
@@ -734,7 +696,7 @@ li a.active{
 	border:0;
 }
 
-/*Search News*/
+/*search news*/
 .search {
   width: 80%;
   position: relative;
@@ -808,7 +770,7 @@ li a.active{
 #article-full p{
 	font-size: 13px;
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	padding: 5px 5px 0px 0px;
 	width:82%;
 	text-align: justify;
@@ -860,7 +822,6 @@ li a.active{
 }
 
 /*terms and conditions page section*/
-
 #termsconditions{
 	background: #fff;
 	position: relative;
@@ -883,12 +844,12 @@ li a.active{
 #termsconditions p{
 	font-size: 13px;
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	padding-bottom:10px;
 }
 
 li.terms{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	list-style: disc;
 }
 
@@ -911,11 +872,10 @@ li.terms{
 	font-size: 28px;
 	color: rgb(209, 81, 81);
 }
-
 #privacypolicy p{
 	font-size: 13px;
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 }
 
 /*footer*/
@@ -924,17 +884,15 @@ li.terms{
 	border-top:8px solid #ffffff;
 	height: 95px;
 }
-
 .footer-para{
 	margin: 0;
 	padding: 0;
 }
 .footer p{
 	font-size: 13px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	color: #fff;
 	padding:20px 10px 15px 0px;
-
 }
 .footer a{
 	color:#fff;
@@ -963,7 +921,6 @@ li.terms{
     width: 100%;
     height:330px;
 }
-
 
 /******************************
 responsive area
@@ -998,11 +955,9 @@ responsive area
   	.person-detail p {
   		font-size: 12px;
   	}
-
   	p{
   		font-size:18px;
   	}
-
 }
 
 /* sm */
@@ -1118,14 +1073,13 @@ responsive area
 /* XS Portrait */
 @media (max-width: 479px) {
 	.top-header img.logo {
-	  margin: 20px 10px;
+	  margin: 10px 0px 10px 0px;
 	}
-
+	.top-header{
+		background: #fff; !important;
+	}
 	#home{
 		display: none;
-	}
-	.header-logo{
-		margin-top: -10px !important;
 	}
 	.navbar-default .navbar-toggle {
 		 border-color: #fff;
@@ -1135,9 +1089,6 @@ responsive area
 	  font-size: 18px;
 	  text-align: left;
 	}
-	.header-backup{
-		  height: 80px;
-	}
 	h4 {
 	  font-size: 12px !important;
 	}
@@ -1146,51 +1097,144 @@ responsive area
 	}
 	#news h2{
 		font-size:24px;
-		margin-top: 150px;
+		margin-top: 100px;
+	}
+	#viewallarticles{
+		width:100%;
+		height: 30px;
+		float:left;
+		margin:0px;
+	}
+	.latest-articles{
+		margin-left:0px;
+	}
+	#latest-articles-first{
+		margin:15px 0px 5px 0px;
+		width:100%;
+	}
+	#latest-articles-second{
+		margin:15px 0px 30px 0px;
+		width:100%;
+	}
+	.latest-articles-detail h3{
+		font-size: 22px;
+		color: #fff;
+		margin-top: 0;
+	}
+	.latest-articles-detail p{
+		padding-bottom: 0px;
+	}
+	.datepublished{
+		width: 100%;
+		margin:0px 0px 10px 0px;
+		font-size: 18px;
+		text-align: center;
+	}
+	#news button{
+		font-size: 20px;
+		width:100%;
+	}
+	.about h2{
+		font-size: 24px;
+		margin-top: 40px;
+		padding-left:0px;
+	}
+	#about p{
+		padding:0px;
+		width:100%;
+		text-align:left;
+	}
+	#about {
+		margin-top: 0px;
+		padding:0px 0px 50px 0px;
+		background: #ffffff;
+	}
+	#about button{
+		margin:10px 0px 0px 0px;
+		width: 100%;
+		font-size: 20px;
+	}
+	#static_video{
+		width:100%;
+		height:relative;
+		margin:0px 0px 0px 0px;
+	}
+	#info {
+		margin-top:-40px;
+	}
+	#info h2{
+		float:left;
+		padding:0px 0px 0px 20px;
+	}
+	#info h4{
+		float:left;
+		text-align: left;
+		padding-left:20px;
+		margin-bottom:20px;
+	}
+	.keyinfo{
+		padding-top:15px;
+	}
+	.keyinfo h3{
+		font-size: 26px;
+	}
+	.keyinfo p{
+		font-size: 12px;
+		padding: 0 25px;
+		padding-bottom: 20px;
+		margin-bottom:20px;
+	}
+	#contactbg{
+		height: 450px;
+		width:100%;
 	}
 	.contact{
-		height: 400px;
-		margin-top: -400px;
+		height: 450px;
+		left: 0;
+		margin-top: -450px;
+	}
+	.contact-caption{
+		margin-top: 0px;
+		width:100%;
 	}
 	.contact-heading h2 {
-	  font-size: 50px;
+	  font-size: 30px;
 	  text-align: left;
 	  margin-left: 15px;
 	}
 	.contact-info h3 {
-	  margin-left: 8px;
-	  font-size: 25px;
+	  margin:0px 0px 0px 5px;
+	  font-size: 18px;
 	  padding-bottom: 8px;
 	}
 	.info-detail {
-	  margin-left: 8px;
+	  margin-left: 5px;
 	}
 	.contact-info ul li {
-	  font-size: 10px;
-	}
-	.contact-info i.fa {
-	  font-size: 13px;
-	  width: 20px;
-	  height: 18px;
+	  font-size: 11px;
 	}
 	.contact-info, .contact-form{
 		padding: 10px;
 	}
 	.contact-form h3 {
-	  font-size: 25px;
-	  padding-bottom: 8px;
-	  margin-bottom: 0;
-	  margin-right: 0px;
-	}
-	.footer a i.fa {
 	  font-size: 18px;
-	  padding: 25px 7px;
+	  padding-bottom: 8px;
+	  margin:0px 0px 0px 5px;
+	}
+	.contact-form input.submit-btn{
+		width: 290px;
+	}
+	.footer{
+		height: 125px;
+	}
+	.footer p{
+		font-size: 12px;
+		font-family: 'Helvetica', sans-serif;
+		color: #fff;
+		padding:20px 10px 10px 10px;
 	}
 	.footer p {
-  		font-size: 10px;
+  		font-size: 11px;
   	}
-
-  	.footer{
-	height: 95px;
 }
 }
