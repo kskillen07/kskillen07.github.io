@@ -639,7 +639,8 @@ li a.active{
 	border: 1px solid #6a90c4;
 	border-top:7px solid #6a90c4;
 	padding:20px 20px 20px 20px;
-	height: 260px;
+	display: inline-block;
+	height: auto;
 }
 .newsarticle h3{
 	font-size: 30px;
@@ -653,7 +654,6 @@ li a.active{
 	font-family: 'Helvetica', sans-serif;
 	padding: 0px;
 }
-
 .newsarticle a{
 	float:right;
 	width: 135px;
@@ -728,29 +728,24 @@ li a.active{
 	margin:40px 30px 0px 80px;
 	width:80%;
 }
-
 .article-sidebar h2{
 	font-size: 30px;
 	color: #5084C3;
 }
-
 #article-full{
 	position: relative;
 	padding:20px 20px 70px 0px;
 	background-color: #fff;
 }
-
 #article-full h2{
 	font-size: 20px;
 	color: #5084C3;
 	margin-left:-30px;
 }
-
 #article-full h3{
 	font-size: 24px;
 	color: #6aa387;
 }
-
 #article-full h4{
 	font-size: 16px;
 	margin-top:30px;
@@ -766,7 +761,6 @@ li a.active{
 	width:82%;
 	text-align: justify;
 }
-
 #article-full a{
 	color:#5084C3;
 	font-size:24px;
@@ -777,22 +771,18 @@ li a.active{
 	-o-transition:all .5s ease 0s;
 	-ms-transition:all .5s ease 0s;
 }
-
 #article-full img{
 	padding:20px 0px 20px 0px;
 }
-
 #article-full a:hover{
 	color:#61a2f2;
 }
-
 #viewall_articledetail{
 	width:150px;
 	height: 20px;
 	float:right;
 	margin:0px 110px 0px 0px;
 }
-
 #viewall_articledetail a{
 	color: #fff;
 	background: #37588C;
@@ -806,7 +796,6 @@ li a.active{
 	-o-transition:all .5s ease 0s;
 	-ms-transition:all .5s ease 0s;
 }
-
 #viewall_articledetail a:hover{
 	background: #5488DB;
 	color: #fff;
@@ -1322,6 +1311,42 @@ responsive area
 	}
 	.search {
 	  width: 100%;
+	}
+	.article-sidebar{
+		margin:100px 20px 0px 0px;
+		width:100%;
+	}
+	.article-sidebar h2{
+		font-size: 30px;
+	}
+	#article-full{
+		padding:20px 20px 0px 0px;
+		width:100%;
+		position: relative;
+	}
+	#article-full h2{
+		font-size: 28px;
+		margin-left:0px;
+	}
+	#article-full img{
+		width:100%;
+		height:auto;
+		padding:10px 0px 10px 0px;
+	}
+	#article-full p{
+		width:100%;
+		text-align: left;
+	}
+	#viewall_articledetail{
+		width:100%;
+		text-align: center;
+		margin:0px 0px 40px 0px;
+		font-size: 20px;
+		padding:5px 0px 5px 0px;
+	}
+	#viewall_articledetail a{
+		color: #fff;
+		display: block;
 	}
 	#contactbg{
 		height: 450px;
