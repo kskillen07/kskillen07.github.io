@@ -713,7 +713,7 @@ li a.active{
 .searchButton {
   width: 40px;
   height: 36px;
-  border: 1px solid #00B4CC;
+  border: 1px solid #6aa387;
   background: #6aa387;
   text-align: center;
   color: #fff;
@@ -1280,6 +1280,48 @@ responsive area
 		padding: 0 25px;
 		padding-bottom: 20px;
 		margin-bottom:20px;
+	}
+	#allnewsarticles{
+		background: #fff;
+		position: relative;
+		border-bottom: 5px solid #ebebeb;
+		padding:0px 20px 50px 20px;
+	}
+	#allnewsarticles h2{
+		font-size: 30px;
+		margin-left:0px;
+		margin-bottom:-10px;
+	}
+	.allnewsarticles-sidebar{
+		margin:130px 20px 0px 0px;
+		width:100%;
+	}
+	.allnewsarticles-sidebar h3{
+		font-size: 30px;
+		color: #6aa387;
+		padding-left:0px;
+	}
+	.displayall{
+		width:100%;
+	}
+	.newsarticle{
+		display: inline-block;
+		width:100%;
+		height: auto;
+	}
+	.newsarticle h3{
+		font-size: 30px;
+	}
+	.newsarticle a{
+		text-align: center;
+		width: 100%;
+	}
+	.allnewsdatepublished{
+		width: 100%;
+		text-align: center;
+	}
+	.search {
+	  width: 100%;
 	}
 	#contactbg{
 		height: 450px;
