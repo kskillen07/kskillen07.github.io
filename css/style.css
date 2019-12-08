@@ -36,6 +36,11 @@ h1, h2{
   -o-transition:all .5s ease 0s;
   -ms-transition:all .5s ease 0s;
 }
+.header-logo img{
+	margin:20px 0px 0px 95px;
+	display: block;
+	width: 40%;
+  }
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
@@ -904,9 +909,13 @@ responsive area
 /* md */
 @media (min-width: 992px) and (max-width: 1499px) {
 	.navbar-default .navbar-nav>li>a {
-	  font-size: 20px;
-	  padding: 14px 12px;
+	  font-size: 18px;
+	  padding: 10px 8px;
 	}
+	.header-logo img{
+		margin:20px 0px 0px 15px;
+		width: 45%;
+	  }
 	.carousel-caption h1 {
   		font-size: 60px;
   	}
@@ -923,12 +932,6 @@ responsive area
   	}
   	h4 {
   		font-size: 22px !important;
-  	}
-  	.person-detail h3 {
-  		font-size: 26px;
-  	}
-  	.person-detail p {
-  		font-size: 12px;
   	}
   	p{
   		font-size:18px;
@@ -1091,7 +1094,9 @@ responsive area
 		display: none;
 	}
 	.header-logo img{
-	  margin-top: 20px;
+	  margin:20px 0px 0px 25px;
+	  display: block;
+	  width: 80%;
 	}
 	.navbar-default .navbar-nav>li>a {
 	  font-size: 18px;
@@ -1158,6 +1163,10 @@ responsive area
 	.top-header{
 		background: #fff; !important;
 	}
+	.header-logo img{
+		margin:20px 0px 0px 25px;
+		width: 100%;
+	  }
 	#home{
 		display: none;
 	}
