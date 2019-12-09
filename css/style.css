@@ -39,7 +39,6 @@ h1, h2{
 .header-logo img{
 	margin:20px 0px 0px 95px;
 	display: block;
-	width: 40%;
   }
 .navbar-default {
   background-color: transparent;
@@ -71,7 +70,7 @@ ul.nav{
 	-moz-transition: all .7s ease 0s;
 	-o-transition: all .7s ease 0s;
 	-ms-transition: all .7s ease 0s;
-	padding: 14px 15px;
+	padding: 13px 14px;
 	font-weight: bold;
 }
 .navbar-default .navbar-nav>li>a:hover{
@@ -913,8 +912,8 @@ responsive area
 	  padding: 10px 8px;
 	}
 	.header-logo img{
-		margin:20px 0px 0px 15px;
-		width: 45%;
+		margin:0px 0px 0px 0px;
+		width:180px;
 	  }
 	.carousel-caption h1 {
   		font-size: 60px;
@@ -944,6 +943,13 @@ responsive area
 	   font-size: 16px;
 	   padding: 8px 6px;
    }
+   .navbar-default {
+	   border:1px solid #000;
+   }
+   .header-logo img{
+	margin:0px;
+	width:160px;
+  }
 	.carousel-caption h1 {
   		font-size: 40px;
   	}
@@ -1162,10 +1168,11 @@ responsive area
 	}
 	.top-header{
 		background: #fff; !important;
+		border-bottom:2px solid #ebebeb;
 	}
 	.header-logo img{
 		margin:20px 0px 0px 25px;
-		width: 100%;
+		width: 170px;
 	  }
 	#home{
 		display: none;
@@ -1356,6 +1363,24 @@ responsive area
 	#viewall_articledetail a{
 		color: #fff;
 		display: block;
+	}
+	#renewables{
+		padding:0px 0px 50px 0px;
+	}
+	#renewables h2{
+		font-size: 30px;
+		margin-top:100px;
+	}
+	#renewables p{
+		font-size: 13px;
+		padding: 0px;
+	}
+	.renewables-sidebar{
+		margin:30px 30px 0px 0px;
+		width:100%;
+	}
+	.renewables-sidebar h3{
+		font-size: 30px;
 	}
 	#termsconditions{
 		padding:0px 0px 0px 0px;
