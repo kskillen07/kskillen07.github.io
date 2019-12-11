@@ -30,16 +30,13 @@ h1, h2{
 .top-header img.logo{
 	margin-bottom: 15px;
 	margin-top: 0;
-	transition:all .5s ease 0s;
-  -webkit-transition:all .5s ease 0s;
-  -moz-transition:all .5s ease 0s;
-  -o-transition:all .5s ease 0s;
-  -ms-transition:all .5s ease 0s;
 }
 .header-logo img{
-	margin:20px 0px 0px 95px;
-	display: block;
+	margin:20px 0px 0px 0px;
   }
+.header-logo{
+	z-index:99999;
+}
 .navbar-default {
   background-color: transparent;
   border-color: transparent;
@@ -178,7 +175,6 @@ li a.active{
 	margin-top: 45px;
 	padding-left:30px;
 }
-
 .about h4{
 	font-size: 24px;
 	color: #737373;
@@ -250,22 +246,26 @@ li a.active{
 #news-img img{
 	width: 100%;
 }
-#news button{
-	width: 120px;
+.readmore-btn{
+	width: 150px;
 	height: 30px;
+	padding:3px 5px 3px 5px;
 	background: #4DA374;
 	color: #fff;
 	font-size: 20px;
 	text-transform: uppercase;
 	border:0;
+	display: inline-block;
+	text-align: center;
 	transition:all .5s ease 0s;
 	-webkit-transition:all .5s ease 0s;
 	-moz-transition:all .5s ease 0s;
 	-o-transition:all .5s ease 0s;
 	-ms-transition:all .5s ease 0s;
 }
-#news button:hover{
+.readmore-btn:hover{
 	background: #58DB93;
+	color:#fff;
 }
 .datepublished{
 	width: 130px;
@@ -281,15 +281,11 @@ li a.active{
 	margin-left:30px;
 	height: relative;
 }
-#latest-articles-first{
-	margin:15px 0px 15px 0px;
-	width:48%;
-	float:left;
+.homearticle{
+	margin:0px 10px 15px -10px;
 }
-#latest-articles-second{
-	margin:15px 0px 15px 15px;
-	width:48%;
-	float:left;
+.hometwitter{
+	margin:0px;
 }
 .latest-articles-detail{
 	background: #3F3F3F;
@@ -913,7 +909,6 @@ responsive area
 	}
 	.header-logo img{
 		margin:0px 0px 0px 0px;
-		width:180px;
 	  }
 	.carousel-caption h1 {
   		font-size: 60px;
@@ -934,7 +929,15 @@ responsive area
   	}
   	p{
   		font-size:18px;
-  	}
+	  }
+	.datepublished{
+		width:100%;
+		margin-bottom:10px;
+		text-align: center;
+	}
+	.readmore-btn{
+		width:100%;
+	}
 }
 
 /* sm */
@@ -943,13 +946,6 @@ responsive area
 	   font-size: 16px;
 	   padding: 8px 6px;
    }
-   .navbar-default {
-	   border:1px solid #000;
-   }
-   .header-logo img{
-	margin:0px;
-	width:160px;
-  }
 	.carousel-caption h1 {
   		font-size: 40px;
   	}
@@ -989,8 +985,12 @@ responsive area
 		width: 100%;
 		font-size: 20px;
 	}
-	#static_video{
+	.readmore-btn{
+		font-size: 20px;
 		width:100%;
+	}
+	#static_video{
+		width:90%;
 		height:relative;
 		margin:0px 0px 0px 0px;
 	}
@@ -1061,12 +1061,6 @@ responsive area
 	.latest-articles{
 		margin-left:0px;
 	}
-	#latest-articles-first{
-		margin:15px 10px 5px 0px;
-	}
-	#latest-articles-second{
-		margin:15px 0px 30px 0px;
-	}
 	.latest-articles-detail h3{
 		font-size: 22px;
 		color: #fff;
@@ -1101,8 +1095,6 @@ responsive area
 	}
 	.header-logo img{
 	  margin:20px 0px 0px 25px;
-	  display: block;
-	  width: 80%;
 	}
 	.navbar-default .navbar-nav>li>a {
 	  font-size: 18px;
@@ -1142,7 +1134,11 @@ responsive area
 	  }
 	h4{
   		font-size: 18px !important;
-  	}
+	  }
+	.readmore-btn{
+		font-size: 20px;
+		width:100%;
+	}
 	.contact-info ul {
 	  margin-left: 4px;
 	}
@@ -1166,14 +1162,13 @@ responsive area
 	.top-header img.logo {
 	  margin: 10px 0px 10px 0px;
 	}
+	.header-logo img{
+		margin:20px 0px 0px 25px;
+	  }
 	.top-header{
 		background: #fff; !important;
 		border-bottom:2px solid #ebebeb;
 	}
-	.header-logo img{
-		margin:20px 0px 0px 25px;
-		width: 170px;
-	  }
 	#home{
 		display: none;
 	}
@@ -1193,7 +1188,7 @@ responsive area
 	}
 	#news h2{
 		font-size:24px;
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 	#viewallarticles{
 		width:100%;
@@ -1210,13 +1205,8 @@ responsive area
 	.latest-articles{
 		margin-left:0px;
 	}
-	#latest-articles-first{
-		margin:15px 0px 5px 0px;
-		width:100%;
-	}
-	#latest-articles-second{
-		margin:15px 0px 30px 0px;
-		width:100%;
+	.homearticle{
+		margin:30px 0px 15px 0px;
 	}
 	.latest-articles-detail h3{
 		font-size: 22px;
@@ -1232,7 +1222,7 @@ responsive area
 		font-size: 18px;
 		text-align: center;
 	}
-	#news button{
+	.readmore-btn{
 		font-size: 20px;
 		width:100%;
 	}
@@ -1255,11 +1245,6 @@ responsive area
 		margin:10px 0px 0px 0px;
 		width: 100%;
 		font-size: 20px;
-	}
-	#static_video{
-		width:100%;
-		height:relative;
-		margin:0px 0px 0px 0px;
 	}
 	#info {
 		margin-top:-40px;
