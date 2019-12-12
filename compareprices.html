@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Compare NI Electricity Prices | enirgy.info - the Northern Ireland Electricity Information Site</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -72,7 +73,7 @@
 					        <!-- Wrapper for slides -->
 					        <div class="carousel-inner" role="listbox">
 					            <div class="item active">
-					            	<img src="img/headerbg1_ni.png" alt="">
+					            	<img src="img/headerbg_yellow_resized.jpg" alt="">
 					                <div class="carousel-caption">
 				               			<h1>Compare NI Electricity Prices</h1>
 				               			<p>Some information goes here</p>
@@ -88,24 +89,99 @@
 
 
 		<!-- renewables section -->
-			<section class="about text" id="compareprices">
+			<section class="calc_pane" id="form">
 				<div class="container">
 					<div class="row">
-  						<div class="col-sm-4">
-  							<div class="compareprices-sidebar">
-  								<h3>Sidebar</h3>
-								<p>The sourcing of energy from renewable sources is here to stay whatever question marks hang over the future of the system of cash support. The dangers of climate change are too important to ignore. </p>
-							</div>
-  						</div>
 
-  						<div class="col-sm-8">
+  						<div class="col-sm-11">
   							<div class="comparecalc">
-  								<h2>Compare NI Electricity Prices</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue lacus viverra vitae congue eu.</p>
+								  <h2>Compare NI Electricity Prices</h2>
+								  <p>Some introduction text here</p>
+								  
+								  <form id="enirgy_form">
+									  
+									<div class="output" id="validation"></div>
+
+									<div class="separator first">
+										<h3>Your supplier</h3>
+									</div>
+
+									<div class="line">
+										<label class="field_current" for="supplier_select">Who is your current supplier?</label>
+										<div id="supplier_select"></div>
+									</div>
+															
+									<div class="separator">
+										<h3>Payment Method</h3>
+									</div>
+
+									<div class="line pair selectable clearfix">
+										<label class="field_by" for="payment_method_select">How do you pay for your electricity?</label>
+										<select id="payment_method_select" name="payment_method"></select>
+										<br />
+										<label class="field_howfuture" for="future_payment_method_select">How do you wish to pay?</label> 
+										<select id="future_payment_method_select" name="future_payment_method"></select>
+									</div>
+																		
+									<div class="separator">
+										<h3>Your Tariff</h3>
+									</div>
+									
+									<div class="line selectable">
+										<label class="field_by" for="tariff_select">Which tariff are you on?</label>
+										<select id="tariff_select" name="tariff_id"></select>															
+									
+									<div class="help-wrapper contract">
+										<a class="help-btn " href="#">?</a>
+										<div class="help-panel">
+											<h3>Where's my contract?</h3>
+											<div class="help-arrow"></div>
+											<p>Cant find your tariff here? That's probably because you're in a contract. Exiting a contract early may well incur penalties. What you should do will partly depend on how close you are to the end of your deal. Because we don't know your situation, we can't work out what switching might save you. Sorry.</p>
+									<p>Don't know your tariff? Just pick any and choose how you want to pay. The cheapest one that matches your criteria will be identified for you.</p>
+										</div>
+									</div>
+								</div>
+								
+									<div class="separator">
+										<h3>What You Currently Pay</h3>
+									</div>
+									
+									<div class="line budget_standing_charge hidden" data-showontariffs="74,76">
+										 <p><strong>Budget Energy Surcharge</strong></p>
+										 <p>As a Budget Energy credit user, you pay an annual surcharge of £29.23</p>
+										 <p>This will be automatically included in calculation - please enter the amount on your bill inclusive.</p>
+									</div>
+												
+									<div class="line radios billpay">
+										<label class="field_freq" for="payment_frequency">How often do you pay your bill?</label>
+										<div class="amount-overlay"><input type="radio" name="payment_frequency" value="monthly" checked="checked" /> monthly</div>
+										<div class="amount-overlay"><input type="radio" name="payment_frequency" value="quarterly" /> quarterly</div>
+									</div>
+									
+									<div class="line selectable">
+										<label class="field_ipay selectable" for="amount_pounds">How much do you pay per bill?</label>
+										<div class="amount-overlay">&pound;<input type="number" name="amount_pounds" value="50" step="any" /></div>
+									</div>
+															
+									<div class="line selectable keypad">
+										<label class="field_usage" for="usage_level">How much do you use?</label>
+										<select id="usage_select" name="usage_level"></select>
+										<div class="help-wrapper usage">
+											<a class="help-btn" href="#">?</a>
+											<div class="help-panel">
+												<h3>What does this mean?</h3>
+												<div class="help-arrow"></div>
+												<p>Many homes will use around 3200 units of electricity a year (average). But single households or couples in a flat could consume as few as 2100 units (low) while big families or those who live in large houses might use up to 5100 units annually (high). Choose whichever is closest to your situation. It will affect the calculation of your annual bill.</p>
+											</div>
+										</div>
+									</div>
+									
+									<input type="submit" name="submit" value="GO" />
+								</form>
 							</div>
-  						</div>
-				</section>
-		<!-- section ends here -->
+						</div>
+					</section>
+					<!-- section ends here -->
 
 
 			<!-- footer starts here -->

@@ -335,6 +335,58 @@ li a.active{
 	background: #5488DB;
 }
 
+/*Compare Prices Calc Page*/
+#form{
+	padding:0px 0px 0px 0px;
+}
+#form h2{
+	font-size: 36px;
+	color: #5084C3;
+	margin-left:30px;
+	margin-top:30px;
+}
+#form h3{
+	font-size: 28px;
+	color: rgb(209, 81, 81);
+	margin-left:30px;
+}
+#form p{
+	font-size: 14px;
+	color: #000000;
+	font-family: 'Helvetica', sans-serif;
+	padding: 0px;
+	margin-left:30px;
+}
+#form label, #form input{
+	font-size: 14px;
+	margin-left:30px;
+	font-family: 'Helvetica', sans-serif;
+}
+.comparecalc{
+	width:80%;
+	margin: 0 auto;
+	background-color:#fff;
+	border:1px solid #ebebeb;
+	padding:15px 15px 50px 15px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+#form input[type="submit"]{
+	width: 60px;
+	height: 30px;
+	float: left;
+	font-size: 18px;
+	color: #fff;
+	background-color: #6DBF93;
+	padding: 0;
+	border:none;
+	font-family: 'BenchNine', sans-serif;
+	font-weight: bold;
+}
+#form input[type="submit"]:hover{
+	background-color: #7CDCA8;
+}
+
 /*key information section homepage*/
 .keyinfo{
 	background: #3F3F3F;
@@ -497,58 +549,51 @@ li a.active{
 	background: #fff;
 	position: relative;
 	border-bottom: 5px solid #ebebeb;
-	padding:0px 0px 50px 100px;
+	padding:0px 0px 50px 50px;
 	background-color: #fff;
 }
-
 #renewables h2{
 	font-size: 34px;
 	color: #5084C3;
+	margin-left:-25px;
 }
-
 #renewables p{
-	font-size: 14px;
+	font-size: 13px;
 	color: #000000;
 	font-family: 'Helvetica', sans-serif;
 	padding: 5px;
 }
-
 .renewables-sidebar{
-	margin:70px 30px 0px 0px;
+	margin:50px 30px 0px 0px;
 	width:80%;
 }
-
 .renewables-sidebar h3{
 	font-size: 34px;
 	color: #5084C3;
 	padding-left:2px;
 }
-
 /*fuel prices page section*/
 
 #fuelprices{
 	background: #fff;
 	position: relative;
 	border-bottom: 5px solid #ebebeb;
-	margin-left:50px;
 	background-color: #fff;
-	padding-bottom:30px;
+	padding:0px 0px 50px 50px;
 }
-
 #fuelprices h2{
 	font-size: 34px;
 	color: #5084C3;
+	margin-left:-25px;
 }
-
 #fuelprices p{
-	font-size: 14px;
+	font-size: 13px;
 	color: #000000;
 	font-family: 'Helvetica', sans-serif;
 	padding: 5px;
 }
-
 .fuelprices-sidebar{
-	margin:70px 30px 0px 0px;
+	margin:50px 30px 0px 0px;
 	width:80%;
 }
 
@@ -557,44 +602,6 @@ li a.active{
 	color: #5084C3;
 	padding-left:2px;
 }
-
-/*compare prices page section*/
-
-#compareprices{
-	background: #fff;
-	position: relative;
-	border-bottom: 5px solid #ebebeb;
-	padding:0px 20px 50px 100px;
-	background-color: #fff;
-}
-
-#compareprices h2{
-	font-size: 34px;
-	color: #5084C3;
-}
-
-#compareprices p{
-	font-size: 14px;
-	color: #000000;
-	font-family: 'Helvetica', sans-serif;
-	padding: 5px;
-}
-
-.compareprices-sidebar{
-	margin:70px 20px 0px 0px;
-	width:80%;
-}
-
-.compareprices-sidebar h3{
-	font-size: 34px;
-	color: #5084C3;
-	padding-left:2px;
-}
-
-.comparecalc{
-	width:90%;
-}
-
 /*all news articles page */
 
 #allnewsarticles{
@@ -921,6 +928,7 @@ responsive area
 	  height: 50px;
 	  font-size: 24px;
 	}
+	
 	h2 {
   		font-size: 35px !important;
   	}
@@ -1071,6 +1079,18 @@ responsive area
 		font-size: 20px;
 		width:100%;
 	}
+	#renewables{
+		padding:0px 0px 50px 0px;
+	}
+	#renewables h2{
+		margin-left:0px;
+	}
+	#fuelprices{
+		padding:0px 0px 50px 0px;
+	}
+	#fuelprices h2{
+		margin-left:0px;
+	}
 	#termsconditions{
 	padding-left: 50px;
 }
@@ -1082,9 +1102,6 @@ responsive area
 		font-size: 14px;
 		padding: 10px 8px;
 	  }
-	#home{
-		
-	}
 	.header-logo img{
 	  margin:20px 0px 0px 25px;
 	}
@@ -1370,6 +1387,56 @@ responsive area
 	}
 	.renewables-sidebar h3{
 		font-size: 30px;
+	}
+	#fuelprices{
+		padding:0px 0px 50px 0px;
+	}
+	#fuelprices h2{
+		font-size: 30px;
+		margin-top:130px;
+		margin-left:0px;
+	}
+	#fuelprices p{
+		font-size: 13px;
+		padding: 0px;
+	}
+	.fuelprices-sidebar{
+		margin:30px 30px 0px 0px;
+		width:100%;
+	}
+	.fuelprices-sidebar h3{
+		font-size: 30px;
+	}
+	#form h2{
+		font-size: 24px;
+		margin-left:0px;
+		margin-top:100px;
+	}
+	#form h3{
+		font-size: 20px;
+		color: rgb(209, 81, 81);
+		margin-left:0px;
+	}
+	#form p{
+		font-size: 12px;
+		margin-left:0px;
+	}
+	#form label, #form input{
+		font-size: 12px;
+		margin-left:0px;
+		font-family: 'Helvetica', sans-serif;
+	}
+	.comparecalc{
+		width:100%;
+		margin: 0 auto;
+		border:none;
+		padding:10px 10px 50px 10px;
+	}	
+	#renewables{
+		padding:25px 0px 30px 0px;
+	}
+	#renewables h2{
+		margin-left:0px;
 	}
 	#termsconditions{
 		padding:0px 0px 0px 0px;
