@@ -386,6 +386,90 @@ li a.active{
 #form input[type="submit"]:hover{
 	background-color: #7CDCA8;
 }
+/*addition for david*/
+div#results {
+    padding: 10px 40px 10px 40px;
+    margin: 20px 0px 10px 40px;
+    font-family: "Helvetica";
+    font-size: 12px;
+}
+
+h3.saving{
+	font-size: 16px;
+    font-weight: bold;
+    color: #35b174;
+    padding: 5px;
+}
+
+#intro p{
+	font-family: 'Helvetica', sans-serif;
+    font-size: 12px;
+}
+
+#intro h2{
+	color: #4772B2;
+	margin-top: 45px;
+	padding-left:0px;
+}
+
+.complicated_bits {
+    background: #dbe9f5;
+    border-radius: 10px;
+    padding: 10px 20px 20px 20px;
+    padding: 0px 10px 10px 10px;
+    margin: 20px 0px 20px 0px;
+}
+
+.complicated_bits h3 {
+	font-family: 'BenchNine';
+	font-size: 28px;
+	color: #337ab7;
+	font-weight: bold;
+}
+
+table.calculator-outputs{
+	border: 1px solid #dadada;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.calculator-outputs tbody {
+    font-size: 11px;
+}
+
+th{
+	font-size: 14px;
+    padding: 20px;
+    color: #5084c3;
+}
+
+td.logo{
+	padding:20px;
+}
+
+td.name{
+	padding:20px;
+	font-size:12px
+}
+
+td.figures {
+    font-weight: bold;
+	color: #de0f21;
+	font-size:12px;
+}
+
+.expand {
+    width: 50%;
+    padding: 20px;
+	font-size: 10px;
+}
+
+.expand h4{
+	color: #337ab7;
+    font-family: "BenchNine";
+    font-size: 20px;
+}
 
 /*key information section homepage*/
 .keyinfo{
@@ -813,6 +897,8 @@ li a.active{
 	background: #5488DB;
 	color: #fff;
 }
+
+
 
 /*terms and conditions page section*/
 #termsconditions{
