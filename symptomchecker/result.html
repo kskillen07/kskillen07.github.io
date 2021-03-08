@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/checker.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script src="js/calculate_score.js"></script>
+
+<script>
+    // var result_text =   url.searchParams.get("c");
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const result_text = urlParams.get('result')
+    console.log(result_text);
+
+    function startTest(){
+        window.location.replace("loading.html");
+    }
+</script>
+<body>
+
+    <div id="header">
+        <img src="images/randoxicon.png" class="r_icon" ></img> 
+        <h1 class="maintitle">Symptom Checker</h1> 
+    
+        <div id="bar">
+        </div>
+    </div>
+
+<form id="regForm" action="#">
+  
+  <div class="result">
+        <span style="font-size: 24px;">Based on the symptoms you selected, the following test is recommended: </span>
+          
+        <br/><br/>
+        <span style="font-weight: bold; font-size: 26px;" class="result_text">blasj</span>
+  </div>
+
+  <div style="overflow:auto;">
+      <button type="button" id="startBtn" onclick="startTest()">Start Test</button>
+    </div>
+  </div>
+</form>
+
+
+</body>
+<script>
+    $('.result_text').text(result_text + " TEST");
+</script>
+</html>

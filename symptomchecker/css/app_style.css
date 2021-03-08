@@ -1,0 +1,751 @@
+body {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .wrapper {
+    max-width: 95%;
+    margin: 0px auto;
+  }
+
+  .ui-page-theme-a .ui-bar-inherit{
+    background-color: #fff;
+    border-color:#D8252F;
+    border-width:1px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+
+  .ui-page-theme-a{
+    text-shadow: none !important;
+    color:#000;
+    background-color: #ebebeb;
+}
+
+  .approw{
+    background:#ffffff;
+    float:left;
+    padding:10px 5px 5px 5px;
+    margin: 0px 0px 15px 0px;
+    border-radius:4px;
+    border:1px solid #c5c5c5;
+    width:100%;
+  }
+
+  .approw:hover{
+    border:1px solid #41b4a1;
+  }
+  
+  .contentcolumn {
+  float: left;
+  }
+
+  .left, .right {
+  width: 30%;
+  padding:0px 5px 0px 5px;
+  }
+
+  .middle {
+  width: 40%;
+  padding:0px 5px 0px 5px;
+  }
+  
+.btn{
+    font-size:14px !important;
+    padding:12px;
+    margin:7px 0px 15px 0px;
+    color:#000;
+    font-weight:bold !important;
+    text-align: center;
+  }
+  
+  .btn-viewchart{
+    background-color: #2c8879;
+    color: #fff;
+    margin-top:30px;
+    padding:20px 10px 20px 10px;
+  }
+  
+  .btn-downloadcsv{
+    background-color: #3a9e6f;
+    color: #fff;
+  }
+
+  .btn-back{
+    background-color: #73a8a0;
+    color: #fff;
+    padding:6px;
+    font-size:14px !important;
+    float:left; 
+    margin:30px 0px 0px 20px;
+  }
+
+  .btn-back:hover{
+    background-color: #567e78;
+    color: #fff;
+  }
+
+  .btn-testinfo{
+    background-color: #3b8bc0;
+    color: #fff;
+    padding:8px;
+    border:none;
+    font-size:14px !important;
+    float:right; 
+    margin:30px 0px 0px 20px;
+  }
+
+  .btn-testinfo:hover{
+    background-color: #48a6e4;
+    color: #fff;
+  }
+
+  .ui-page-theme-a a{
+      text-shadow: none !important;
+      color:#697a7a;
+  }
+
+  .ui-page-theme-a .btn-viewchart:visited,.btn-downloadcsv:visited{
+      color:#fff !important;
+  }
+
+  .ui-page-theme-a .btn-viewchart:link,.btn-downloadcsv:link{
+    color:#fff !important;
+}
+
+.ui-page-theme-a .btn-viewchart:hover{
+    background-color: #64C3AD !important;
+}
+
+.ui-page-theme-a .btn-downloadcsv:hover{
+    background-color: #31835d !important;
+}
+
+  .ui-link a{   
+    color:#fff !important;
+  }
+
+  .ui-link{   
+    color:#2c8879 !important;
+  }
+  
+  .card-title{
+    font-size:16px;
+    font-weight: bold;
+  }
+
+  /*Form Elements*/
+
+  /* Style the form */
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+  
+  /*Test Status CSS*/
+  .outcome_completehome {
+    font-weight:bold;
+    font-size:100%;
+    border-radius: 3px;
+    background-color: #5d95c4;
+    padding:5px;
+    margin:5px 0px 15px 5px;
+    float: left;
+    color: #fff;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .outcome_incompletehome {
+    font-weight:bold;
+    font-size:100%;
+    border-radius:3px;
+    background-color: #c95666;
+    padding:5px;
+    margin:5px 0px 15px 5px;
+    float: left;
+    color: #fff;
+    width: 90%;
+    text-align: center;
+  }
+
+  .outcome_completehome {
+    font-weight:bold;
+    font-size:100%;
+    border-radius: 3px;
+    background-color: #5d95c4;
+    padding:5px;
+    margin:5px 0px 15px 5px;
+    float: left;
+    color: #fff;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .outcome_inprogresshome {
+    font-weight:bold;
+    font-size:90%;
+    border-radius:3px;
+    background-color: #2d448f;
+    padding:5px;
+    margin:5px 0px 15px 5px;
+    float: left;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    -webkit-animation-name: pulsate;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  @-webkit-keyframes pulsate {
+    0% { background-color: #4caf62;}
+    10% { background-color: #4caf62;}
+    20% { background-color: #4caf62; }
+    30% { background-color: #4caf62;}
+    40% { background-color: #70df88;} 
+    50% { background-color: #70df88;}
+    60% { background-color: #70df88;}
+    70% {background-color: #4caf62;}
+    80% { background-color: #4caf62;}
+    90% { background-color: #4caf62;}
+    100% { background-color: #4caf62;}
+  }
+
+  .card-body{
+    padding:15px;
+    text-align: left;
+  }
+  
+  .card-title{
+    font-size:16px;
+    font-weight: bold;
+  }
+
+  /* Media Query for iPhone X */
+
+  @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 812px)
+  and (-webkit-device-pixel-ratio : 3) 
+  and (orientation : landscape) { 
+  
+  .btn .btn-back{
+    color:#fff;
+    padding:5px;
+    margin:5px 0px 0px 10px;
+    border-radius:3px;
+    font-size: 16px !important;
+  }
+
+  .card{
+    margin:30px 0px 10px 0px;
+  }
+
+  .card-body{
+    padding:15px;
+    text-align: left;
+    font-size:14px;
+  }
+  
+  .card-title{
+    font-size:14px;
+    font-weight: bold;
+  }
+
+  .outcome_complete {
+    font-weight:bold;
+    font-size:100%;
+    background-color: #fff;
+    float: left;
+    color: #fff;
+    margin:10px 0px 0px 0px;
+    color: #46a882;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .outcome_incomplete {
+    font-weight:bold;
+    font-size:100%;
+    border:3px solid #c95666;
+    background-color: white;
+    z-index:600;
+    padding:5px;
+    margin:5px 0px 0px 0px;
+    float: left;
+    color: #c95666;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Media Query for iPhone 5 Portrait*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait){
+
+  .card{
+    margin:10px 10px 0px 10px;
+  }
+
+  .card-body{
+    padding:15px;
+    text-align: left;
+    font-size:14px;
+  }
+  
+  .card-title{
+    font-size:16px;
+    font-weight: bold;
+  }
+
+  .outcome_complete {
+    font-weight:bold;
+    font-size:80%;
+    background-color: #fff;
+    float: left;
+    color: #fff;
+    margin:5px 0px 0px 0px;
+    color: #46a882;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .outcome_incomplete {
+    font-weight:bold;
+    font-size:80%;
+    border:3px solid #c95666;
+    background-color: white;
+    z-index:600;
+    padding:5px;
+    margin:10px 0px 0px 0px;
+    float: left;
+    color: #c95666;
+    width: 100%;
+    text-align: center;
+  }
+
+  .outcome_completehome {
+    font-size:95%;
+    width: 100%;
+  }
+  
+  .outcome_incompletehome {
+    font-size:95%;
+    width: 100%;
+  }
+  
+  .btn-viewchart{
+    color: #fff;
+    margin-top:30px;
+    padding:15px 5px 15px 5px;
+  }
+}
+
+/* Media Query for iPhone 5 Landscape*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+
+  .card{
+    margin:10px 0px 10px 20px;
+  }
+
+  .card-body{
+    padding:15px;
+    text-align: left;
+    font-size:14px;
+  }
+  
+  .card-title{
+    font-size:16px;
+    font-weight: bold;
+  }
+
+  .outcome_complete {
+    font-weight:bold;
+    font-size:80%;
+    background-color: #fff;
+    float: left;
+    color: #fff;
+    margin:10px 0px 0px 0px;
+    color: #46a882;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .outcome_incomplete {
+    font-weight:bold;
+    font-size:80%;
+    border:3px solid #c95666;
+    background-color: white;
+    z-index:600;
+    padding:5px;
+    margin:10px 0px 0px 0px;
+    float: left;
+    color: #c95666;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Media Query for iPhone 6/7/8 Landscape*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { 
+ 
+
+  .row{
+    margin-left:0px;
+  }
+
+  .card{
+    margin:0px 0px 10px 0px;
+  }
+
+  .card-body{
+    padding:15px;
+    text-align: left;
+    font-size:14px;
+  }
+  
+  .card-title{
+    font-size:16px;
+    font-weight: bold;
+  }
+
+  .outcome_complete {
+    font-weight:bold;
+    font-size:80%;
+    background-color: #fff;
+    float: left;
+    color: #fff;
+    margin:10px 0px 0px 0px;
+    color: #46a882;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .outcome_incomplete {
+    font-weight:bold;
+    font-size:80%;
+    border:3px solid #c95666;
+    background-color: white;
+    z-index:600;
+    padding:5px;
+    margin:10px 0px 0px 0px;
+    float: left;
+    color: #c95666;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Media Query for iPhone 6/7/8 Portrait*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+
+
+  .row{
+    margin-left:-10px;
+  }
+
+  .card{
+    margin:0px 0px 10px 0px;
+  }
+
+  .card-body{
+    padding:15px;
+    text-align: left;
+    font-size:12px;
+  }
+  
+  .card-title{
+    font-size:12px;
+    font-weight: bold;
+  }
+
+  .outcome_complete {
+    font-weight:bold;
+    font-size:80%;
+    background-color: #fff;
+    float: left;
+    color: #fff;
+    margin:5px 0px 0px 0px;
+    color: #46a882;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .outcome_incomplete {
+    font-weight:bold;
+    font-size:80%;
+    border:3px solid #c95666;
+    background-color: white;
+    z-index:600;
+    padding:5px;
+    margin:10px 0px 0px 0px;
+    float: left;
+    color: #c95666;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+  /* Media Query for iPhone X portrait */
+
+  @media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 812px) 
+  and (-webkit-device-pixel-ratio : 3)
+  and (orientation : portrait) { 
+
+  
+  .maintitle {
+    font-size:12px;
+  }
+
+  .imgresponsive{
+    width:20px;
+  }
+
+  .card{
+    margin:10px 10px 10px 10px;
+  }
+
+  .card-body{
+    padding:15px;
+    text-align: left;
+    font-size:12px;
+  }
+  
+  .card-title{
+    font-size:12px;
+    font-weight: bold;
+  }
+
+  .outcome_complete {
+    font-weight:bold;
+    font-size:80%;
+    background-color: #fff;
+    float: left;
+    color: #fff;
+    margin:10px 0px 0px 0px;
+    color: #46a882;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .outcome_incomplete {
+    font-weight:bold;
+    font-size:80%;
+    border:3px solid #c95666;
+    background-color: white;
+    z-index:600;
+    padding:5px;
+    margin:10px 0px 0px 0px;
+    float: left;
+    color: #c95666;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Media Query for Tablets and iPads  */ 
+@media only screen 
+and (device-height: 768px) 
+and (device-width: 1024px)
+and (orientation : landscape){ 
+
+  
+  .maintitle {
+    font-size:24px;
+  }
+
+  .outcome_complete {
+    font-weight:bold;
+    font-size:85%;
+    background-color: #fff;
+    float: left;
+    color: #fff;
+    margin:10px 0px 0px 0px;
+    color: #46a882;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .outcome_incomplete {
+    font-weight:bold;
+    font-size:80%;
+    border:3px solid #c95666;
+    background-color: white;
+    z-index:600;
+    padding:5px;
+    margin:10px 0px 0px 0px;
+    float: left;
+    color: #c95666;
+    width: 100%;
+    text-align: center;
+  }
+
+  .card-body{
+    font-size:18px;
+  }
+  
+  .card-title{
+    font-size:20px;
+  }
+} 
+
+@media only screen 
+and (min-width: 768px) 
+and (max-width: 1024px)
+and (orientation : portrait){ 
+  
+  .maintitle {
+    font-size:24px;
+  }
+
+  .outcome_complete {
+    font-weight:bold;
+    font-size:85%;
+    background-color: #fff;
+    float: left;
+    color: #fff;
+    margin:10px 0px 0px 0px;
+    color: #46a882;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .outcome_incomplete {
+    font-weight:bold;
+    font-size:80%;
+    border:3px solid #c95666;
+    background-color: white;
+    z-index:600;
+    padding:5px;
+    margin:10px 0px 0px 0px;
+    float: left;
+    color: #c95666;
+    width: 100%;
+    text-align: center;
+  }
+
+  .card-body{
+    font-size:18px;
+  }
+  
+  .card-title{
+    font-size:20px;
+  }
+} 

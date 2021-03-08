@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/checker.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script src="js/calculate_score.js"></script>
+
+
+<body>
+
+<div id="header">
+    <img src="images/randoxicon.png" class="r_icon" ></img> 
+    <h1 class="maintitle">Symptom Checker</h1> 
+
+    <div id="bar">
+    </div>
+</div>
+
+
+<form id="regForm" action="#">
+  
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">
+      <h2>Do you have any of the following symptoms?</h2>
+      
+      <label class="container">Joint pain
+          <input type="checkbox" value="joint_pain" name="joint_pain">
+          <span class="checkmark"></span>
+      </label>
+      
+      <label class="container">Fever
+          <input type="checkbox" value="fever" name="fever">
+          <span class="checkmark"></span>
+      </label>
+
+      <label class="container">Chronic inflammation
+        <input type="checkbox" value="chronic_inflammation" name="chronic_inflammation">
+        <span class="checkmark"></span>
+    </label>
+
+      <label class="container">Cough
+          <input type="checkbox" value="cough" name="cough">
+          <span class="checkmark"></span>
+      </label>
+
+      <label class="container">Chronic cough
+          <input type="checkbox" value="chronic_cough" name="chronic_cough">
+          <span class="checkmark"></span>
+      </label>
+
+      <label class="container">Spatum production
+        <input type="checkbox" value="sputum_production" name="spatum_production">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="container">Palpitations
+        <input type="checkbox" value="palpitations" name="palpitations">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="container">Lightheadedness
+        <input type="checkbox" value="lightheadedness" name="lightheadedness">
+        <span class="checkmark"></span>
+      </label>
+
+      <label class="container">Fatigue
+        <input type="checkbox" value="fatigue" name="fatigue">
+        <span class="checkmark"></span>
+      </label>
+  </div>
+  <div class="tab">
+    <h2>Do you have any of the following symptoms?</h2>
+    
+    <label class="container">Daytime sleepiness
+        <input type="checkbox" value="daytime_sleepiness" name="daytime_sleepiness">
+        <span class="checkmark"></span>
+    </label>
+    
+    <label class="container">Diarrhoea
+        <input type="checkbox" value="diarrhoea" name="diarrhoea">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Increase in thirst
+        <input type="checkbox" value="increase_in_thirst" name="increase_in_thirst">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Dehydration
+        <input type="checkbox" value="dehydration" name="dehyrdation">
+        <span class="checkmark"></span>
+    </label>
+    
+    <label class="container">Swollen lymph nodes
+        <input type="checkbox" value="swollen_lymph_nodes" name="swollen_lymph_nodes">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Unexplained weight loss
+        <input type="checkbox" value="unexplained_weight_loss" name="unexplained_weight_loss">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Unexplained weight gain
+        <input type="checkbox" value="unexplained_weight_gain" name="unexplained_weight_gain">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Constipation
+        <input type="checkbox" value="constipation" name="constipation">
+        <span class="checkmark"></span>
+    </label>
+  </div>
+  <div class="tab">
+    <h2>Do you have any of the following symptoms?</h2>
+    
+    <label class="container">Neck lump swelling
+        <input type="checkbox" value="neck_lump_swelling" name="neck_lump_swelling">
+        <span class="checkmark"></span>
+    </label>
+    
+    <label class="container">Sensitive to heat
+        <input type="checkbox" value="sensitive_to_heat" name="sensitive_to_heat">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Feeling cold/sensitivity to cold
+        <input type="checkbox" value="feeling_cold" name="feeling_cold">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Tremor or trembling
+        <input type="checkbox" value="tremor_or_trembling" name="tremor_or_trembling">
+        <span class="checkmark"></span>
+    </label>
+    
+    <label class="container">Worry/anxiety
+        <input type="checkbox" value="worry_or_anxiety" name="worry_or_anxiety">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Back pain
+        <input type="checkbox" value="back_pain" name="back_pain">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="container">Neck pain
+        <input type="checkbox" value="neck_pain" name="neck_pain">
+        <span class="checkmark"></span>
+    </label>
+  </div>
+
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:30px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+
+  <div style="overflow:auto;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+</form>
+
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Send";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    getFormData();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+
+function getFormData(){
+    var result = [];
+    var x = $("#regForm").serializeArray();
+    console.log(x);
+    $.each(x, function(i, field){
+        result.push(field.value);
+    });
+    console.log(result);
+    calculateTestScore(result);
+}
+
+</script>
+
+</body>
+</html>

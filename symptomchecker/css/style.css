@@ -1,0 +1,273 @@
+body {
+  font-family: Helvetica Neue, Arial, sans-serif;
+  text-align: center;
+}
+
+.wrapper_index {
+  max-width: 580px;
+  margin: 100px auto;
+  border:1px solid #ebebeb;
+  border-bottom: none;
+}
+
+.btn-home{
+  background-color: #467558;
+  color: #fff;
+  padding:10px 20px 10px 20px;
+  border-radius: 4px;
+  font-size:20px;
+  margin-left: 80px;
+}
+.btn-home:hover{
+  background-color: #31553f;
+  color: #fff;
+  text-decoration: none;
+}
+  
+a {
+  margin-top:0px;
+  display: block;
+  color: #a04652;
+}
+
+a:hover{
+  color: #77313a;
+}
+
+.maintitle {
+  color :#2a2b2b;
+  font-weight:400;
+  font-size:30px;
+  margin:0 auto;
+}
+
+.btn{
+  font-size:16px !important;
+  font-weight:bold !important;
+}
+
+.btn-viewchart{
+  background-color: #5d8399;
+  color: #fff;
+}
+
+.btn-viewchart:hover{
+  background-color: #455f6e;
+  color: #fff;
+}
+
+.btn-downloadcsv{
+  background-color: #3a9e6f;
+  color: #fff;
+}
+
+.btn-downloadcsv:hover{
+  background-color: #31835d;
+  color: #fff;
+}
+
+.card-body{
+  padding:15px;
+  text-align: left;
+}
+
+.card-title{
+  font-size:16px;
+  font-weight: bold;
+}
+
+/*Test Result CSS*/
+.outcome_complete {
+  font-weight:bold;
+  font-size:100%;
+  border:3px solid #31975f;
+  background-color: white;
+  z-index:600;
+  padding:5px;
+  margin:10px 0px 0px 0px;
+  float: left;
+  color: #31975f;
+  width: 100%;
+  text-align: center;
+}
+
+.outcome_incomplete {
+  font-weight:bold;
+  font-size:100%;
+  border:3px solid #c95666;
+  background-color: white;
+  z-index:600;
+  padding:5px;
+  margin:10px 0px 0px 0px;
+  float: left;
+  color: #c95666;
+  width: 100%;
+  text-align: center;
+}
+
+#info{
+  width:20%;
+  display: flex;
+  height:auto;
+  border:1px solid #ebebeb;
+}
+
+/*CSS for table view*/
+#randox_table{
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+    font-size:12px;
+    table-layout: fixed;
+    word-wrap:break-word; 
+    border: 7px solid #ebebeb;
+  }
+
+#randox_table.dataTable th  {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    color:#3a7451;
+    font-weight:800;
+    font-size: 18px;
+}
+#randox_table tbody tr:nth-child(even):hover td{
+    background-color: #dceae6 !important;
+}
+
+#randox_table tbody tr:nth-child(odd):hover td {
+    background-color: #dceae6 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+  background: #fff !important;
+  border-color:#ebebeb !important;;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:active{
+  background: #438879 !important;
+  border-color:#fff !important;
+  border-radius: 5px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+  background: #438879 !important;
+  border-color:#fff !important;
+  border-radius: 5px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled{
+  background: #fff !important;
+  border-color:#fff !important;
+  border-radius: 5px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current{
+  color:#fff !important;
+  background: #438879 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+  color:#fff !important;
+}
+
+.btn-back {
+  color: #fff;
+  background-color: #51a895;
+  border-color: #51a895;
+}
+
+.btn-back:hover{
+  color: #fff;
+  background-color: #408576;
+  border-color: #408576;
+}
+
+input{
+  border:2px solid #575656 !important;
+}
+
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1025px) and (max-width: 1280px){ 
+  .wrapper {
+    max-width: 1020px;
+    margin: 50px auto;
+  }
+
+  #randox_table.dataTable th  {
+    font-size: 16px;
+    font-weight: bold;
+    padding:10px 10px 10px 10px;
+   }
+
+   #randox_table.dataTable tr  {
+    font-size: 16px;
+   }
+  } 
+
+ /* Media Query for Tablets and iPads  */ 
+ @media (min-width: 768px) and (max-width: 1024px){ 
+  #randox_table.dataTable th  {
+    font-size: 12px;
+    font-weight: bold;
+    padding:10px 10px 10px 10px;
+  }
+     
+  #randox_table.dataTable tr  {
+    font-size: 14px;
+  }
+  
+  .wrapper {
+    max-width: 800px;
+    margin: 50px auto;
+  }
+  
+  .maintitle {
+    font-size:24px;
+  }
+
+  .btn-viewchart, .btn-downloadcsv{
+    font-size: 14px !important;
+  }
+  
+} 
+
+/* Media Query for iPhone X */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) { 
+
+  #randox_table.dataTable th  {
+    font-size: 10px;
+    font-weight: bold;
+    padding:10px 10px 10px 10px;
+  }
+     
+  #randox_table.dataTable tr  {
+    font-size: 12px;
+  }
+  
+  .wrapper {
+    max-width: 780px;
+    margin: 0px auto;
+  }
+  
+  .maintitle {
+    font-size:22px;
+  }
+
+  .imgresponsive{
+    width:80px;
+  }
+
+  .btn-viewchart, .btn-downloadcsv, .btn-danger{
+    font-size: 10px !important;
+  }
+
+  a.btn-secondary{
+    margin-right:125px !important;
+  }
+
+}

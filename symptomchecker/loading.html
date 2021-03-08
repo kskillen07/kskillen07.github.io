@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/checker.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+
+<style>
+    .loader {
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      margin: 0 auto;
+      border-top: 16px solid #085347;
+      width: 120px;
+      height: 120px;
+      margin-top:50px;
+      -webkit-animation: spin 2s linear infinite; /* Safari */
+      animation: spin 2s linear infinite;
+    }
+    
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    </style>
+
+<body>
+
+    <div id="header">
+        <img src="images/randoxicon.png" class="r_icon" ></img> 
+        <h1 class="maintitle">Symptom Checker</h1> 
+    
+        <div id="bar">
+        </div>
+    </div>
+
+<form id="regForm" action="#">
+    <div class="loader"></div>
+</form>
+
+
+</body>
+</html>
